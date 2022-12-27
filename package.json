@@ -1,0 +1,77 @@
+{
+  "name": "pkgs",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "files": [
+    "build"
+  ],
+  "types": "build/index.d.ts",
+  "description": "A skeleton to create your own React component library using Rollup,  TypeScript, tailwind and ladle",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "generate": "node ./util/create-component",
+    "prepublishOnly": "npm run build",
+    "story-dev": "ladle serve --port 4123",
+    "story-build": "ladle build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tigawanna/react-component-library-builder.git"
+  },
+  "keywords": [
+    "React",
+    "Component",
+    "Library",
+    "Rollup",
+    "Typescript",
+    "Tailwind",
+    "Ladle"
+  ],
+  "author": "tigawanna",
+   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tigawanna/react-component-library-builder.git/issues"
+  },
+  "homepage": "https://github.com/tigawanna/react-component-library-builder.git#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+     "@types/react-dom": "^16.9.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@ladle/react": "^2.4.5",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-multi-entry": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^24.9.1",
+    "@types/react": "^16.14.14",
+    "@types/react-dom": "^16.9.14",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^8.2.2",
+    "babel-preset-react-app": "^10.0.0",
+    "colors": "^1.4.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "rollup": "^2.56.3",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "tailwind-scrollbar": "^2.0.1",
+    "tailwindcss": "^3.2.4",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "color": "^4.2.3",
+    "colors": "^1.4.0"
+  }
+}
